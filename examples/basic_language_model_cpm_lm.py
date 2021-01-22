@@ -31,6 +31,7 @@ tokenizer = SpTokenizer(
     token_start=None,
     token_end=None,
     pre_tokenize=pre_tokenize,
+    # '\u2583'为换行符，此处为将换行符替换为'<cls>'特殊符.
     token_translate={u'\u2583': '<cls>'}
 )  # 建立分词器
 
