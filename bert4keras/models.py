@@ -2320,6 +2320,7 @@ def build_transformer_model(
         configs['version'] = 't5.1.1'
 
     transformer = MODEL(**configs)
+    # 此处以Transformer类中的build()函数创建模型.
     transformer.build(**configs)
 
     if checkpoint_path is not None:
